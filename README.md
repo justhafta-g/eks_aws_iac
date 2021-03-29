@@ -1,1 +1,1 @@
-Provision an EKS Cluster (AWS)
+Provision an ECS Cluster (AWS)
