@@ -3,6 +3,6 @@ resource "aws_s3_bucket" "tf_backend" {
   acl    = "private"
 
   tags = {
-    Name        = "tf_backend"
+    Name = "tf_backend"
   }
 }
