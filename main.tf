@@ -1,6 +1,12 @@
 provider "aws" {
-    access_key = "AWS_ACCESS_KEY_ID"
-    secret_key = "AWS_SECRET_ACCESS_KEY"
-    region     = "eu-central-1" 
+    region     = var.region
+    version = "~> 3.0"
 }
 
+/*terraform {
+  backend "s3" {
+    bucket = "tf-backend-bucket-jh"
+    key    = "global/s3/terraform.tfstate"
+    region = "us-east-1"
+  }
+}
