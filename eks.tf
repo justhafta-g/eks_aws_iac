@@ -26,7 +26,7 @@ POLICY
 resource "aws_iam_role_policy_attachment" "aws_eks_cluster_policy" {
   # The ARN of the policy that we want to apply, that role gives as a lot of accesses
   # https://github.com/SummitRoute/aws_managed_policies/blob/master/policies/AmazonEKSClusterPolicy
-  policy_arn = "arn:aws:iam:policy/AmazonEKSClusterPolicy"
+  policy_arn = "arn:aws:iam::aws:policy/AmazonEKSClusterPolicy"
 
   #Role policy should be applied to
 

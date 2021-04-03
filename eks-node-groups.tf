@@ -21,7 +21,7 @@ POLICY
 resource "aws_iam_role_policy_attachment" "aws_eks_worker_node_policy_general" {
   # The ARN of the policy that we want to apply, that role gives as a lot of accesses
   # https://github.com/SummitRoute/aws_managed_policies/blob/master/policies/AmazonEKSWorkerNodePolicy
-  policy_arn = "arn:aws:iam:policy/AmazonEKSWorkerNodePolicy"
+  policy_arn = "arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy"
 
   #Role policy should be applied to
 
@@ -31,7 +31,7 @@ resource "aws_iam_role_policy_attachment" "aws_eks_worker_node_policy_general" {
 resource "aws_iam_role_policy_attachment" "aws_eks_cni_policy_general" {
   # The ARN of the policy that we want to apply, that role gives as a lot of accesses
   # https://github.com/SummitRoute/aws_managed_policies/blob/master/policies/AmazonEKS_CNI_Policy
-  policy_arn = "arn:aws:iam:policy/AmazonEKS_CNI_Policy"
+  policy_arn = "arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"
 
   #Role policy should be applied to
 
@@ -41,7 +41,7 @@ resource "aws_iam_role_policy_attachment" "aws_eks_cni_policy_general" {
 resource "aws_iam_role_policy_attachment" "aws_eks_ec2_container_registry_policy_general" {
   # The ARN of the policy that we want to apply, that role gives as a lot of accesses
   # https://github.com/SummitRoute/aws_managed_policies/blob/master/policies/AmazonEC2ContainerRegistryReadOnly
-  policy_arn = "arn:aws:iam:policy/AmazonEC2ContainerRegistryReadOnly"
+  policy_arn = "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly"
 
   #Role policy should be applied to
 
