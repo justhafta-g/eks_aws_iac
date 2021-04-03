@@ -11,10 +11,10 @@ Requirements
 Basic aws cli configuration:
 
 - $ aws configure
-AWS Access Key ID [None]: AKIAIOSFODNN7EXAMPLE
-AWS Secret Access Key [None]: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
-Default region name [None]: us-west-2
-Default output format [None]: json
+- AWS Access Key ID [None]: AKIAIOSFODNN7EXAMPLE
+- AWS Secret Access Key [None]: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+- Default region name [None]: us-west-2
+- Default output format [None]: json
 
 
 Terraform Backend Configuration
@@ -34,14 +34,14 @@ Destroy
 
 Before destroing aws_s3_bucket.tf_backend need to be removed from resources list:
 
-# list all resources
+#list all resources
 - $ terraform state list
 
-# remove that resource you don't want to destroy
-# you can add more to be excluded if required
+#remove that resource you don't want to destroy
+#you can add more to be excluded if required
 - $ terraform state rm <resource_to_be_deleted> 
 
-# destroy the whole stack except above excluded resource(s)
+#destroy the whole stack except above excluded resource(s)
 - $ terraform destroy 
 
 License
