@@ -10,3 +10,7 @@ variable "cluster_name" {
 variable "profile" {
   default = "default"
 }
+
+variable "nodes_group_name" {
+  default = "eks-node-group-general"
+}
