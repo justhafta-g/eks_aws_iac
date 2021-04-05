@@ -20,7 +20,8 @@ Basic aws cli configuration:
 Terraform Backend Configuration
 ----------------
 
-Main.tf defines ussing AWS S3 Bucket as storage for terraform.tfstate   
+Main.tf defines ussing AWS S3 Bucket as storage for terraform.tfstate
+S3 bucket needs to be created before:
 
 Run
 ----------------
